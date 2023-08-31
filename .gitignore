@@ -1,0 +1,9 @@
+# nodered configs
+nodered/*
+!settings.js
+
+# mosquitto configs
+mosquitto/*
+!mosquitto/config/mosquitto.conf
+
+
