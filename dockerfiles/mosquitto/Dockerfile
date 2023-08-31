@@ -1,7 +1,7 @@
 FROM eclipse-mosquitto
 
 # Copy custom configuration file
-COPY dockerfiles/mosquitto/mosquitto.conf /mosquitto/config/mosquitto.conf
+COPY ./dockerfiles/mosquitto/mosquitto.conf /mosquitto/config/mosquitto.conf
 
 # expose ports
 

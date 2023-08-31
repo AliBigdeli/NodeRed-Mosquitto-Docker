@@ -4,7 +4,7 @@ services:
   nodered:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfiles/nodered/Dockerfile
     ports:
       - 1880:1880
     volumes:
@@ -13,11 +13,11 @@ services:
   mosquitto:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfiles/mosquitto/Dockerfile
+    
     ports:
       - 1883:1883
       - 9001:9001
     volumes:
-      - ./mosquitto/config:/mosquitto/config
       - ./mosquitto/data:/mosquitto/data
       - ./mosquitto/log:/mosquitto/log

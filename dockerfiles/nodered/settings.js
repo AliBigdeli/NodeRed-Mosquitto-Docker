@@ -1,15 +1,15 @@
-adminAuth: {
-    type: "credentials",
-    users: [
+module.exports = {
+    adminAuth: {
+      type: "credentials",
+      users: [
         {
-            username: "admin",
-            password: "$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN.",
-            permissions: "*"
+          username: "admin",
+          password: "$2b$08$qZ8kK3iTPOVeJVmt1qoWhORehvmR6W2PzfNnguWWx4pHSh4V1Q/GC",
+          permissions: "*",
         },
-        {
-            username: "george",
-            password: "$2b$08$wuAqPiKJlVN27eF5qJp.RuQYuy6ZYONW7a/UWYxDTtwKFCdB8F19y",
-            permissions: "read"
-        }
-    ]
-}
+      ],
+    },
+    // httpNodeAuth: { user: process.env.NR_USERNAME || "", pass: process.env.NR_PASSWORD || "" },
+    // httpAdminRoot: "/admin",
+    // httpNodeRoot: "/",
+  };
